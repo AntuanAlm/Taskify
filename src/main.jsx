@@ -1,14 +1,14 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { BrowserRouter } from 'react-router-dom'
-import { TaskProviderWrapper } from './context/task.context.jsx'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+import { HashRouter } from 'react-router-dom';
+import { TaskProviderWrapper } from './context/task.context.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/Taskify/">
+  <HashRouter>
     <TaskProviderWrapper>
       <App />
     </TaskProviderWrapper>
-  </BrowserRouter>
-)
+  </HashRouter>
+);
