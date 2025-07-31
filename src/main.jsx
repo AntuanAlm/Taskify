@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { TaskProviderWrapper } from './context/task.context.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/Taskify">
+  <BrowserRouter basename="/Taskify/">
     <TaskProviderWrapper>
       <App />
     </TaskProviderWrapper>
